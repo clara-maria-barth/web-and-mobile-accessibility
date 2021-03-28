@@ -48,3 +48,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.navbar-toggler')
         .addEventListener('click', toggleNavigation, false);
 }, false);
+
+$(document).ready(function(){
+    var fontSize = parseInt($('#root').css('font-size'));
+    $('#font-increase-button').on("click", function(){
+        fontSize+=5;
+        $('#root').css('font-size',fontSize+'px');
+    })
+    $('#font-decrease-button').on("click", function(){
+        fontSize-=5;
+        $('#root').css('font-size',fontSize+'px');
+    })
+})
