@@ -5,7 +5,7 @@ Project to develop modern and accessible  Web content
 python 3.x
 
 
-## python -m http.server 800
+## python -m http.server 8000
 Start the local server from the src directory.
 Open http://localhost:8000/ to view it in the browser.
 
