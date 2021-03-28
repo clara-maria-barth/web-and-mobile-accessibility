@@ -1,0 +1,57 @@
+html {
+    font-size: 1rem
+}
+
+body,
+html {
+    height: 100%
+}
+
+body a,
+body div,
+body p {
+    color: #dfdfdf
+}
+
+body a:hover {
+    color: #cdcdcd
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 100
+}
+
+.subtitle {
+    font-size: 1.2rem
+}
+
+.header .logo {
+    height: 3.5rem;
+    width: 3.5rem
+}
+
+.header .title {
+    font-size: 1.5rem;
+    line-height: 1.8rem
+}
+
+.header .font-increase-button,
+.nav .font-increase-button {
+    font-size: .8rem
+}
+
+.header .font-decrease-button,
+.nav .font-decrease-button {
+    font-size: .6rem
+}
+
+.footer,
+.header,
+.nav {
+    flex: 0 0 auto
+}
+
+.main {
+    flex: 1 0 auto
+}
