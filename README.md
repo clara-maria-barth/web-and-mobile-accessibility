@@ -17,28 +17,30 @@ Open `http://localhost:8000/` to view it in the browser.
 To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your Chrome browser.
 
 ## TODO 
+📅 Due date: May 20th 📅  
 
 - Exercise 2 
-    - [ ] Font Size Buttons 
-    - [ ] Text Readability 
+    - [ ] Font Size Buttons  (Qas) 
+    - [ ] Text Readability   (Clive) 
     - [x] Page Regions
     - [x] Reading Order 
 - Exercise 3 
-    - [ ] Switch 3 article div elements to HTML5 semantic tags
-    - [ ] Check headings in index.html 
-    - [ ] Address menu structure for index.html 
-    - [ ] Drop-down menu
-    - [ ] Escape menu closing 
-    - [ ] Skip Links
+    - [ ] Switch 3 article div elements to HTML5 semantic tags (Clara)
+    - [ ] Check headings in index.html (Clara)
+    - [ ] Address menu structure for index.html (Clive)
+    - [ ] Drop-down menu (Clive)
+    - [ ] Escape menu closing (Qas) 
+    - [ ] Skip Links (Clive + Qas) 
 - Exercise 4
     - [ ] Form Labels
     - [ ] Group basic and additional information in account creation
     - [ ] Form input validation (empty form) 
 - Exercise 5
-    - Alt tag everything
-    - Complex images 
+    - [ ] Alt tag everything
+    - [ ] Complex images 
 - Exercise 6 
-    - Mark header and data cells in article.html
-    - Column and row groups (check slides) 
+    - [ ] Mark header and data cells in article.html
+    - [ ] Column and row groups (check slides) 
 - Exercise 7
-    - Test everything with WAVE and JAWS
+    - [ ] Test everything with WAVE and JAWS
+    - [ ] Assemble Report
