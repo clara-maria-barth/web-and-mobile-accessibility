@@ -15,3 +15,30 @@ Open `http://localhost:8000/` to view it in the browser.
 ## Accessibility Evaluation
 
 To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your Chrome browser.
+
+## TODO 
+
+- Exercise 2 
+    - [ ] Font Size Buttons 
+    - [ ] Text Readability 
+    - [x] Page Regions
+    - [x] Reading Order 
+- Exercise 3 
+    - [ ] Switch 3 article div elements to HTML5 semantic tags
+    - [ ] Check headings in index.html 
+    - [ ] Address menu structure for index.html 
+    - [ ] Drop-down menu
+    - [ ] Escape menu closing 
+    - [ ] Skip Links
+- Exercise 4
+    - [ ] Form Labels
+    - [ ] Group basic and additional information in account creation
+    - [ ] Form input validation (empty form) 
+- Exercise 5
+    - Alt tag everything
+    - Complex images 
+- Exercise 6 
+    - Mark header and data cells in article.html
+    - Column and row groups (check slides) 
+- Exercise 7
+    - Test everything with WAVE and JAWS
