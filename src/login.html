@@ -47,58 +47,52 @@
                 <div class="collapse navbar-collapse" id="nav-bar-content">
                     <div class="navbar-nav mr-auto">
                         <div class="nav-item">
-                            <a class="nav-link" href="./">Homepage</a>
+                            <ul>
+                            <li><a class="nav-link" href="./">Homepage</a></li>
+                        </ul>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a>
-                                </div>
-                            </div>
+                           <ul>
+                                <li><a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties">Faculties</a>            
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied sciences</a></li>
+
+                                            <li><a class="dropdown-item" href="./empty.html?title=Architecture+%26+planning">Architecture &amp; planning</a></li>
+                                
+                                            <li><a class="dropdown-item" href="./empty.html?title=Construction+%26+environment">Construction &amp; environment</a></li>
+                                    
+                                            <li><a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a></li>
+                                    
+                                            <li><a class="dropdown-item" href="./empty.html?title=Health+%26+social+sciences">Health &amp; social sciences</a></li>                                   
+                                        </ul>
+                                    </div>
+                            </ul>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
-                            <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a>
+                            <ul>
+                             <li><a class="nav-link dropdown-toggle" href="#" id="nav-bar-education">Education &amp; research</a>
+                                <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Master">Master</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a></li>
+                                </ul>
                                 </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Master">Master</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Continuing+education">Continuing education</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a>
-                                </div>
-                            </div>
+                            </ul>
                         </div>
                         <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
+                            <ul>
+                            <li><a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry">Industry &amp; partners</a>
                             <div class="dropdown-menu">
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a>
-                                </div>
-                                <div>
-                                    <a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
-                                </div>
+                                <ul>                            
+                                    <li><a class="dropdown-item" href="./empty.html?title=Public+relations">Public relations</a></li>                                                           
+                                    <li><a class="dropdown-item" href="./empty.html?title=Commercialization">Commercialization</a></li>                                           
+                                    <li><a class="dropdown-item" href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a></li>
+                                </ul>   
                             </div>
+                        </ul>
                         </div>
                     </div>
                     <div class="navbar-nav">
@@ -128,13 +122,13 @@
                     <ul class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
                         <div class="form-group">
-                            <p>Email</p>
-                            <input class="form-control" id="login-email-control" type="email" placeholder="Email" required>
-                            <small class="invalid-feedback"></small>
+                            <label style="position: relative; top: 10px;">Email</label>
+                            <input class="form-control" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">              
+                            <small class="invalid-feedback" id="email-error"></small>
                         </div>
                         <div class="form-group">
-                            <p>Password</p>
-                            <input class="form-control" id="login-password-control" type="password" placeholder="Password" required>
+                            <label style="position: relative; top: 10px;">Password</label>
+                            <input class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
@@ -143,8 +137,8 @@
                                 <label class="form-check-label">Keep me logged in</label>
                             </div>
                         </div>
-                        <button class="btn btn-primary" id="login-login-button" type="submit">Login</button>
-                        <button class="btn btn-link text-danger ml-3" id="login-forgot-button" type="button">Forgot password</button>
+                        <button class="btn btn-primary" id="login-login-button" type="submit" aria-label="Login">Login</button>
+                        <button class="btn btn-link text-danger ml-3" id="login-forgot-button" type="button" aria-label="Forgot Password">Forgot password</button>
                     </form>
                 </div>
             </div>
@@ -161,37 +155,43 @@
                             </p>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>First name</p>
+                                    <label>First name</label>
                                     <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>Last name</p>
+                                    <label>Last name</label>
                                     <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <p>Email</p>
+                                <label>Email </label>
                                 <input class="form-control" id="register-email-control" type="email" placeholder="Email" required>
                                 <small class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
-                                <p>Password</p>
+                                <label>Password</label>
                                 <input class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
                             <div class="form-group">
-                                <p>Programme</p>
-                                <select class="form-control" id="register-programme-control" required>
-                                    <option value="">Please select your education or research programme</option>
-                                    <option value="bachelor">Bachelor</option>
-                                    <option value="master">Master</option>
-                                    <option value="continuing">Continuing education</option>
-                                    <option value="doctorate">Doctorate</option>
-                                </select>
+                                <fieldset>
+                                <legend>Programme</legend>
+                                <div>
+                                    <input aria-label="bachelor" type="radio" name="degree" id "bachelor" value="BA">
+                                    <label for="bachelor">Bachelor </label>
+                                    <input type="radio" name="degree" id "master" value="MA">
+                                    <label for="master">Master </label>
+                                    <input type="radio" name="degree" id "continuingeducation" value="COE">
+                                    <label for="continuing education">Continuing education </label>
+                                    <input type="radio" name="degree" id "doctorate" value="DOC">
+                                    <label for="doctorate">Doctorate </label>
+                                </div>
                                 <small class="invalid-feedback"></small>
+                            </fieldset>
+
                             </div>
                         </div>
                         <div class="form-group">
@@ -217,7 +217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary" id="register-register-button">Register</button>
+                        <button class="btn btn-primary" id="register-register-button" aria-label="Register">Register</button>
                     </form>
                 </div>
             </div>
@@ -241,6 +241,7 @@
     <script type="text/javascript" src="./js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
+    <script src="script_.js"></script>
 </body>
 
 </html>
