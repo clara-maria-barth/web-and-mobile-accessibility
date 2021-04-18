@@ -128,19 +128,19 @@
                     <ul class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
                         <div class="form-group">
+                            <label for="login-email-control">Email</label>
                             <input class="form-control" id="login-email-control" type="email" placeholder="Email" required style="position: relative; top: 10px;">
-                            <p style="position: relative; top: -60px;">Email</p>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
+                            <label for="login-password-control">Password</label>
                             <input class="form-control" id="login-password-control" type="password" placeholder="Password" style="position: relative; top: 10px;">
-                            <p style="position: relative; top: -60px;">Password</p>
                             <small class="invalid-feedback"></small>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="remember" id="login-remmeber-control">
-                                <label class="form-check-label">Keep me logged in</label>
+                                <label class="form-check-label" for="login-remmeber-control">Keep me logged in</label>
                             </div>
                         </div>
                         <button class="btn btn-primary" id="login-login-button" type="submit">Login</button>
@@ -161,29 +161,29 @@
                             </p>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>First name</p>
+                                    <label for="register-first-name-control">First name</label>
                                     <input class="form-control" type="text" id="register-first-name-control" placeholder="First name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                                 <div class="form-group col-12 col-lg-6">
-                                    <p>Last name</p>
+                                    <label for="register-last-name-control">Last name</label>
                                     <input class="form-control" type="text" id="register-last-name-control" placeholder="Last name" required>
                                     <small class="invalid-feedback"></small>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <p>Email</p>
+                                <label for="register-email-control">Email</label>
                                 <input class="form-control" id="register-email-control" type="email" placeholder="Email" required>
                                 <small class="invalid-feedback"></small>
                             </div>
                             <div class="form-group">
-                                <p>Password</p>
+                                <label for="register-password-control">Password</label>
                                 <input class="form-control" id="register-password-control" type="password" placeholder="Password" required>
                                 <small class="invalid-feedback"></small>
                                 <small id="register-password-help" class="form-text text-muted">Your password must be 8-16 characters long and contain both letters and numbers.</small>
                             </div>
                             <div class="form-group">
-                                <p>Programme</p>
+                            <label for="register-programme-control">Programme</label>
                                 <select class="form-control" id="register-programme-control" required>
                                     <option value="">Please select your education or research programme</option>
                                     <option value="bachelor">Bachelor</option>
@@ -199,20 +199,20 @@
                                 <small class="text-secondary">(optional)</small>
                             </p>
                             <div class="form-group">
-                                <p>Street</p>
+                                <label for="register-street-control">Street</label>
                                 <input class="form-control" id="register-street-control" type="text" placeholder="Street">
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12 col-lg-5">
-                                    <p>City</p>
+                                    <label for="register-city-control">City</label>
                                     <input class="form-control" id="register-city-control" type="text" placeholder="City">
                                 </div>
                                 <div class="form-group col-12 col-lg-4">
-                                    <p>State</p>
+                                    <label for="register-state-control">State</label>
                                     <input class="form-control" id="register-state-control" type="text" placeholder="State">
                                 </div>
                                 <div class="form-group col-12 col-lg-3">
-                                    <p>Zip</p>
+                                    <label for="register-zip-control">Zip</label>
                                     <input class="form-control" id="register-zip-control" type="text" placeholder="Zip">
                                 </div>
                             </div>
