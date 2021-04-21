@@ -22,7 +22,7 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
 - Exercise 2 
     - [ ] Font Size Buttons  (Qas) 
     - [ ] Text Readability   (Clive) 
-    - [x] Page Regions
+    - [x] Page Regions [Merged 21.04.2021 by Qas]
     - [x] Reading Order 
 - Exercise 3 
     - [ ] Switch 3 article div elements to HTML5 semantic tags (Clara)
