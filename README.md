@@ -36,7 +36,7 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
     - [ ] Group basic and additional information in account creation (Clive)
     - [x] Form input validation (empty form) (Clive)
 - Exercise 5
-    - [ ] Alt tag everything (Qas)
+    - [x] Alt tag everything (Qas)
     - [ ] Complex images (Clara)
 - Exercise 6 
     - [ ] Mark header and data cells in article.html (Clara)
