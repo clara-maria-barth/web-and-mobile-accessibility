@@ -21,7 +21,7 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
 
 - Exercise 2 
     - [ ] Font Size Buttons  (Qas) 
-    - [ ] Text Readability   (Clive) 
+    - [x] Text Readability   (Qas) 
     - [x] Page Regions       (Clara)
     - [x] Reading Order      (Clara)
 - Exercise 3 
