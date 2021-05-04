@@ -11,9 +11,14 @@ function setValid(element) {
  * Set the form control element to invalid with the error message
  * @param {object} element - The DOM element
  */
-function setInvalid(element) {
+function setInvalid(element,message) {
     element.classList.remove('is-valid');
     element.classList.add('is-invalid');
+
+    const formControl = element.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = message
 }
 
 /**
@@ -26,12 +31,43 @@ function removeValidation(element) {
 }
 
 /**
+ * Remove validation information from the registration form
+ * @param {object} element - The DOM element
+ */
+function removeRegValidation(){
+    const regData = document
+    .getElementById('register-form')
+    .querySelectorAll('input');
+
+    regData.forEach(el => {
+        removeValidation(el)
+  });
+}
+
+/**
+ * Remove validation information from the login form
+ * @param {object} element - The DOM element
+ */
+function removeLogValidation(){
+    const loginData = document
+      .getElementById('login-form')
+      .querySelectorAll('input');
+
+    loginData.forEach(el => {
+        removeValidation(el)
+    });
+}
+
+
+/**
  * Validate the login form and try to log the user in
  * @param {object} event - The DOM event
  */
 function login(event) {
     event.preventDefault();
     event.stopPropagation();
+    //to remove Error messages in register form
+    removeRegValidation();
 
     var hasError = false;
 
@@ -39,16 +75,16 @@ function login(event) {
     if (email.validity.valid) {
         setValid(email);
     } else if (email.validity.valueMissing) {
-        setInvalid(email);
+        setInvalid(email,'Email can not be empty');
         hasError = true;
     } else {
-        setInvalid(email);
+        setInvalid(email,'Please enter a valid email');
         hasError = true;
     }
 
     var password = document.getElementById('login-password-control');
     if (password.value.trim().length == 0) {
-        setInvalid(password);
+        setInvalid(password,'Password can not be empty');
         hasError = true;
     } else {
         setValid(password);
@@ -69,16 +105,19 @@ function forgot(event) {
     event.preventDefault();
     event.stopPropagation();
 
+    //to remove Error messages in register form
+    removeRegValidation();
+
     var hasError = false;
 
     var email = document.getElementById('login-email-control');
     if (email.validity.valid) {
         setValid(email);
     } else if (email.validity.valueMissing) {
-        setInvalid(email);
+        setInvalid(email,'Email can not be empty');
         hasError = true;
     } else {
-        setInvalid(email);
+        setInvalid(email,'Please enter a valid email');
         hasError = true;
     }
 
@@ -100,11 +139,14 @@ function register(event) {
     event.preventDefault();
     event.stopPropagation();
 
+    //to remove login validation information
+    removeLogValidation();
+
     var hasError = false;
 
     var firstName = document.getElementById('register-first-name-control');
     if (firstName.value.trim().length == 0) {
-        setInvalid(firstName);
+        setInvalid(firstName,'First name can not be empty');
         hasError = true;
     } else if (firstName.validity.valid) {
         setValid(firstName);
@@ -112,7 +154,7 @@ function register(event) {
 
     var lastName = document.getElementById('register-last-name-control');
     if (lastName.value.trim().length == 0) {
-        setInvalid(lastName);
+        setInvalid(lastName,'Last name can not be empty');
         hasError = true;
     } else if (lastName.validity.valid) {
         setValid(lastName);
@@ -122,26 +164,23 @@ function register(event) {
     if (email.validity.valid) {
         setValid(email);
     } else if (email.validity.valueMissing) {
-        setInvalid(email);
+        setInvalid(email,'Email can not be empty');
         hasError = true;
     } else {
-        setInvalid(email);
+        setInvalid(email,'Please enter a valid Email');
         hasError = true;
     }
 
     var password = document.getElementById('register-password-control');
     var passwordValue = password.value.trim();
-    if (passwordValue.length < 8) {
-        setInvalid(password);
-        hasError = true;
-    } else if (passwordValue.length > 16) {
-        setInvalid(password);
+    if (passwordValue.length < 8 || passwordValue.length > 16) {
+        setInvalid(password,'Your password must be 8-16 characters long');
         hasError = true;
     } else if (passwordValue.match(/[a-zA-Z]+/) == null) {
-        setInvalid(password);
+        setInvalid(password,'Your password must contain Letters');
         hasError = true;
     } else if (passwordValue.match(/[0-9]+/) == null) {
-        setInvalid(password);
+        setInvalid(password,'Your password must contain Numbers');
         hasError = true;
     } else {
         setValid(password);
@@ -149,10 +188,10 @@ function register(event) {
 
     var programme = document.getElementById('register-programme-control');
     if (programme.validity.valueMissing) {
-        setInvalid(programme);
+        setInvalid(programme,'You must select one Program');
         hasError = true;
     } else if (!programme.validity.valid) {
-        setInvalid(programme);
+        setInvalid(programme,'Please select a Program');
         hasError = true;
     } else {
         setValid(programme);
@@ -169,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document
         .getElementById('login-login-button')
         .addEventListener('click', login, false);
+       
 
     document
         .getElementById('login-forgot-button')
