@@ -20,7 +20,7 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
 📅 Due date: May 20th 📅  
 
 - Exercise 2 
-    - [ ] Font Size Buttons  (Qas) 
+    - [x] Font Size Buttons  (Qas) 
     - [x] Text Readability   (Qas) 
     - [x] Page Regions       (Clara)
     - [x] Reading Order      (Clara)
