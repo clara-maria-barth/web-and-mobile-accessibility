@@ -21,26 +21,26 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
 
 - Exercise 2 
     - [ ] Font Size Buttons  (Qas) 
-    - [ ] Text Readability   (Clive) 
-    - [x] Page Regions [Merged 21.04.2021 by Qas]
-    - [x] Reading Order 
+    - [x] Text Readability   (Qas) 
+    - [x] Page Regions       (Clara)
+    - [x] Reading Order      (Clara)
 - Exercise 3 
-    - [ ] Switch 3 article div elements to HTML5 semantic tags (Clara)
-    - [ ] Check headings in index.html (Clara)
-    - [ ] Address menu structure for index.html (Clive)
-    - [ ] Drop-down menu (Clive)
-    - [ ] Escape menu closing (Qas) 
+    - [x] Switch 3 article div elements to HTML5 semantic tags (Clara)
+    - [x] Check headings in index.html (Clara)
+    - [x] Address menu structure for index.html (Clive)
+    - [x] Drop-down menu (Clive)
+    - [x] Escape menu closing (Qas) 
     - [ ] Skip Links (Clive + Qas) 
 - Exercise 4
-    - [ ] Form Labels
-    - [ ] Group basic and additional information in account creation
-    - [ ] Form input validation (empty form) 
+    - [ ] Form Labels (Clive)
+    - [ ] Group basic and additional information in account creation (Clive)
+    - [x] Form input validation (empty form) (Clive)
 - Exercise 5
-    - [ ] Alt tag everything
-    - [ ] Complex images 
+    - [x] Alt tag everything (Qas)
+    - [ ] Complex images (Clara)
 - Exercise 6 
-    - [ ] Mark header and data cells in article.html
-    - [ ] Column and row groups (check slides) 
+    - [x] Mark header and data cells in article.html (Clara)
+    - [x] Column and row groups (check slides) (Clara)
 - Exercise 7
-    - [ ] Test everything with WAVE and JAWS
+    - [ ] Test everything with WAVE and JAWS (Clive)
     - [ ] Assemble Report
