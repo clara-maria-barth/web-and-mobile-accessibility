@@ -32,7 +32,7 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
     - [x] Escape menu closing (Qas) 
     - [ ] Skip Links (Clive + Qas) 
 - Exercise 4
-    - [ ] Form Labels (Clive)
+    - [x] Form Labels (Clive)
     - [ ] Group basic and additional information in account creation (Clive)
     - [x] Form input validation (empty form) (Clive)
 - Exercise 5
