@@ -8193,12 +8193,12 @@ a.text-primary:hover {
 }
 
 .text-secondary {
-    color: #6c757d !important
+    color: #000 !important
 }
 
 a.text-secondary:focus,
 a.text-secondary:hover {
-    color: #545b62 !important
+    color: #01f !important
 }
 
 .text-success {
