@@ -145,21 +145,40 @@ function register(event) {
     var hasError = false;
 
     var firstName = document.getElementById('register-first-name-control');
-    if (firstName.value.trim().length == 0) {
+    var firstNameValue = firstName.value.trim();
+    if (firstNameValue.trim().length == 0) {
         setInvalid(firstName,'First name can not be empty');
         hasError = true;
+    } else if (firstNameValue.match(/[0-9]+/) !== null) {
+        setInvalid(firstName,'First name can not contain Numbers');
+        hasError = true
+    } else if (firstNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
+        setInvalid(firstName,'First name can not contain Special Characters');
+        hasError = true
     } else if (firstName.validity.valid) {
         setValid(firstName);
+    } else {
+        setInvalid(firstName,'Please choose a valid First name');
+        hasError = true;
     }
 
     var lastName = document.getElementById('register-last-name-control');
-    if (lastName.value.trim().length == 0) {
+    var lastNameValue = lastName.value.trim();
+    if (lastNameValue.trim().length == 0) {
         setInvalid(lastName,'Last name can not be empty');
         hasError = true;
+    } else if (lastNameValue.match(/[0-9]+/) !== null ) {
+        setInvalid(lastName,'Last name can not contain Numbers');
+        hasError = true
+    } else if (lastNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
+        setInvalid(lastName,'Last name can not contain Special Characters');
+        hasError = true
     } else if (lastName.validity.valid) {
         setValid(lastName);
+    } else {
+        setInvalid(lastName,'Please choose a valid Last name');
+        hasError = true;
     }
-
     var email = document.getElementById('register-email-control');
     if (email.validity.valid) {
         setValid(email);
@@ -189,7 +208,7 @@ function register(event) {
     var programme = document.getElementById('register-programme-control');
     if (programme.validity.valueMissing) {
         setInvalid(programme,'You must select one Program');
-        hasError = true;
+        hasError = true; 
     } else if (!programme.validity.valid) {
         setInvalid(programme,'Please select a Program');
         hasError = true;
