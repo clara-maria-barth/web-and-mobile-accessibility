@@ -12,6 +12,14 @@
     <link href="./css/login.css" rel="stylesheet">
 </head>
 
+<ul class="skip-links">
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a href="#nav-bar-content">Skip to Navigation bar</a></li>
+    <li><a href="#login">Skip to Login</a></li>
+    <li><a href="#createAcc">Skip to Account Registration</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+</ul>
+
 <body class="bg-light">
     <header class="container-fluid d-none d-lg-block my-4 header" , role="banner">
         <div class="container">
@@ -143,7 +151,7 @@
         <div class="row no-gutters">
             <div class="col-12 col-md-5 mt-4 login">
                 <div class="p-4 mr-md-3 bg-white">
-                    <h1 class="text-primary mb-4 title">Login</h1>
+                    <h1 class="text-primary mb-4 title" id="login">Login</h1>
                     <div class="text-danger mb-4 d-none subtitle" id="login-error">Please correct the error(s)</div>
                     <ul class="sr-only" id="login-error-list"></ul>
                     <form id="login-form" novalidate>
@@ -176,7 +184,7 @@
 
             <div class="col-12 col-md-7 mt-4 register">
                 <div class="p-4 bg-white">
-                    <h1 class="text-primary mb-4 title">Create new account</h1>
+                    <h1 class="text-primary mb-4 title" id="createAcc">Create new account</h1>
                     <div class="text-danger mb-4 d-none subtitle" id="register-error">Please correct the error(s)</div>
                     <ul class="sr-only" id="register-error-list"></ul>
                     <form id="register-form" novalidate>
