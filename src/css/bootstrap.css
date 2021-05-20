@@ -479,7 +479,8 @@ mark {
 .list-inline,
 .list-unstyled {
     padding-left: 0;
-    list-style: none
+    list-style: none;
+    
 }
 
 .list-inline-item {
@@ -3082,7 +3083,7 @@ tbody.collapse.show {
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
 }
 
 .dropdown-item:focus,
@@ -3620,7 +3621,9 @@ tbody.collapse.show {
 
 .nav-link {
     display: block;
-    padding: .5rem 1rem
+    padding: .5rem 1rem;
+   
+    
 }
 
 .nav-link:focus,
@@ -3633,11 +3636,12 @@ tbody.collapse.show {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #dee2e6
+    border-bottom: 1px solid #dee2e6;
 }
 
 .nav-tabs .nav-item {
-    margin-bottom: -1px
+    margin-bottom: -1px;
+    
 }
 
 .nav-tabs .nav-link {
@@ -3682,13 +3686,14 @@ tbody.collapse.show {
 
 .nav-fill .nav-item {
     flex: 1 1 auto;
-    text-align: center
+    text-align: center;
+    
 }
 
 .nav-justified .nav-item {
     flex-basis: 0;
     flex-grow: 1;
-    text-align: center
+    text-align: center;
 }
 
 .tab-content>.tab-pane {

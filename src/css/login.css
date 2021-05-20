@@ -1,0 +1,19 @@
+.nav-link:hover{
+    display:inline-block;
+    background-color: white;
+    transform:translate(-10px);
+    border-radius: 14px;
+} 
+
+.nav-link:hover {
+    color:black !important ;
+    text-decoration: underline;
+} 
+
+
+.dropdown-item:hover {
+    background-color: rgb(219, 218, 218);
+    color:blue;
+    text-decoration: underline blue;
+}
+
