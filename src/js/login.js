@@ -5,6 +5,11 @@
 function setValid(element) {
     element.classList.remove('is-invalid');
     element.classList.add('is-valid');
+
+    const formControl = element.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = "";
 }
 
 /**
@@ -27,7 +32,7 @@ function setInvalid(element,message) {
  */
 function removeValidation(element) {
     element.classList.remove('is-valid');
-    element.classList.remove('is-invalid');
+    element.classList.remove('is-invalid');    
 }
 
 /**
@@ -55,7 +60,10 @@ function removeLogValidation(){
 
     loginData.forEach(el => {
         removeValidation(el)
+        
     });
+
+    
 }
 
 
