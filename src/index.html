@@ -12,6 +12,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
+<ul class="skip-links">
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a href="#nav-bar-content">Skip to Navigation bar</a></li>
+    <li><a href="#article-title-1">Skip to News & events</a></li>
+    <li><a href="#article-title-1">Skip to first article</a></li>
+    <li><a href="#article-title-2">Skip to second article</a></li>
+    <li><a href="#article-title-3">Skip to third article</a></li>
+    <li><a href="#studies">Skip to Studies</a></li>
+    <li><a href="#research">Skip to Research</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+</ul>
+
 <body class="d-flex flex-column bg-light">
     <header class="container-fluid d-none d-lg-block my-4 header" role="banner">
         <div class="container">
@@ -180,7 +192,7 @@
             </div>
             <div class="col-12 col-lg-6">
                 <div class="p-4 mt-4 bg-white studies">
-                    <h1 class="text-primary mb-4 title">Studies</h1>
+                    <h1 class="text-primary mb-4 title" id="studies">Studies</h1>
                     <h2 class="font-weight-bold subtitle">Advance your scientific education</h2>
                     <div class="list-unstyled ml-3">
                         <p>
@@ -197,7 +209,7 @@
 
                 <div class="p-4 mt-4 bg-white researches">
                     <h2 class="font-weight-bold subtitle">Latest publications</h2>
-                    <h1 class="text-primary mb-4 title">Researches</h1>
+                    <h1 class="text-primary mb-4 title" id="research">Researches</h1>
                     <h2 class="font-weight-bold subtitle">Join our renowned research groups</h2>
                     <p class="ml-3">
                         <a href="./empty.html?title=Doctorate">Doctoral programmes</a>
@@ -239,7 +251,7 @@
         </div>
     </main>
 
-    <footer class="container-fluid bg-dark mt-4 footer" role="contentinfo">
+    <footer class="container-fluid bg-dark mt-4 footer" id="footer" role="contentinfo">
         <div class="container text-center py-3">
             <div class="row justify-content-around">
                 <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About">About</a>
