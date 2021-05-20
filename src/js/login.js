@@ -198,27 +198,19 @@ function register(event) {
     }
 
     const checkbox = document.querySelectorAll('input[name="degree"]');
+    var fieldset = document.getElementById('register-programme-control');
     var radioBtn = [...checkbox]
-    if (radioBtn.some(rbn => !rbn.checked)) {
-        var errMesg = radioBtn[0].parentNode.querySelector('small')
-        //errMesg.classList.add('invalid-feedback');
-        errMesg.innerText = 'You must select one Program'
-        hasError = true; 
+    if (radioBtn.some(rbn => rbn.checked)) {
+        fieldset.classList.remove('is-invalid'); 
+        fieldset.classList.add('is-valid'); 
+        fieldset.querySelector('small').innerHTML ="";
       } else {
-        errMesg.classList.remove('is-invalid');
-        errMesg.classList.add('is-valid'); 
-      }
-
-   /* var programme = document.getElementById('register-programme-control');
-    if (programme.validity.valueMissing) {
-        setInvalid(programme,'You must select one Program');
+        var errMesg = radioBtn[0].parentNode.querySelector('small')
+        errMesg.innerText = 'You must select one programme'
+        fieldset.classList.add('is-invalid');
+        fieldset.classList.remove('is-valid');
         hasError = true; 
-    } else if (!programme.validity.valid) {
-        setInvalid(programme,'Please select a Program');
-        hasError = true;
- } else {
-        setValid(programme);
-    }*/
+      }
 
     if (hasError) {
         document.getElementById('register-error').classList.remove('d-none');
