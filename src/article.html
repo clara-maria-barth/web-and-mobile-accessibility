@@ -17,9 +17,8 @@
             <div class="row no-gutters">
 
                 <div class="col-8 media">
-                    <a href="./index.html">
-                        <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg"
-                            alt="Link back to homepage">
+                    <a href="./index.html" aria-hidden="true">
+                        <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Homepage">
                     </a>
                     <div class="media-body align-self-center">
 
@@ -31,12 +30,8 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">
-                                A+
-                            </button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">
-                                A-
-                            </button>
+                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
+                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
                         </div>
                     </div>
                 </div>
@@ -153,33 +148,21 @@
             <div class="text-center wrapper">
                 <figure role="group">
                     <img src="./img/temperature.jpg" class="figure-img img-fluid"
-                        alt="Line chart of mean surface temperature change, described in details below." />
+                        alt="Line chart showing the mean surface temperature change." />
                     <figcaption>
-                        <h2 style="display: none">General Overview</h2>
-                        <p class="figure-caption text-center px-5">
+                        <h2 class="sr-only">General Description</h2>
+                        <p class="figure-caption text-center px-5" role="text">
                             The graphic shows the global mean surface temperature change
                             since 1880 till nowadays. The grey curve indicates the annual
                             average temperature and the black curve shows the smoothed
                             result. Over the last two centuries, the mean tempurature has
                             increased by around 1 degree Celcius.
                         </p>
-                        <h2 style="display: none">Detailed Description</h2>
-                        <p style="display: none">
-                            The graph depicts the average temperature from 1880 to the
-                            present, which has ranged between -0.5 and 1.0 degrees Celsius.
-                            Between 1900 and 1920, the lowest point was reached. Following
-                            that, the temperature gradually increased, with a brief peak
-                            around 1950, followed by a brief drop before rising again.
-                            Finally, by 2020, the temperature had risen by around 1 degree
-                            Celsius.
-                        </p>
-                        <h2 style="display: none">Tabulated Values</h2>
-                        <a style="display: none" href="#valuesForImage">Tabluated values of the most important metrics
-                            on the image.</a>
+                        <a class="sr-only" href="./image-details.html">Detailed description of the image</a>
                     </figcaption>
                 </figure>
             </div>
-            <p>
+            <p role="text">
                 The global temperature record shows the fluctuations of the
                 temperature of the atmosphere and the oceans through various spans of
                 time. The recently data published by NASA is one of the most detailed
@@ -191,10 +174,10 @@
                 occurred since 2001, with the exception of 1998. The year 2016 ranks
                 as the warmest on record.
             </p>
-            <div class="table-responsive mt-4 wrapper" id="valuesForImage">
+            <div class="table-responsive mt-4 wrapper">
                 <table class="table text-center">
+                    <caption class="sr-only">Temperature by Century and Year</caption>
                     <tbody class="thead-dark">
-                        <caption style="display: none;">Temperature by Century and Year</caption>
                         <tr>
                             <th class="align-middle" rowspan="2" scope="rowgroup">Century</th>
                             <th class="align-middle" rowspan="2" scope="rowgroup">Year</th>
