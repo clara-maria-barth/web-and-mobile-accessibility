@@ -30,10 +30,10 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
     - [x] Address menu structure for index.html (Clive)
     - [x] Drop-down menu (Clive)
     - [x] Escape menu closing (Qas) 
-    - [ ] Skip Links (Clive + Qas) 
+    - [x] Skip Links (Clive + Qas) 
 - Exercise 4
     - [x] Form Labels (Clive)
-    - [ ] Group basic and additional information in account creation (Clive)
+    - [x] Group basic and additional information in account creation (Clive)
     - [x] Form input validation (empty form) (Clive)
 - Exercise 5
     - [x] Alt tag everything (Qas)
