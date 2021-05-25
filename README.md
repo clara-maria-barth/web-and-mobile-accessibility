@@ -42,5 +42,5 @@ To evaluate the web accessibility add the Extension WAVE Evaluation Tool to your
     - [x] Mark header and data cells in article.html (Clara)
     - [x] Column and row groups (check slides) (Clara)
 - Exercise 7
-    - [ ] Test everything with WAVE and JAWS (Clive)
-    - [ ] Assemble Report
+    - [x] Test everything with WAVE and JAWS (Clive)
+    - [x] Assemble Report
