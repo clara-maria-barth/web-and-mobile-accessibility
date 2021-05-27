@@ -151,10 +151,7 @@ function register(event) {
 
     var firstName = document.getElementById('register-first-name-control');
     var firstNameValue = firstName.value.trim();
-    if (firstNameValue.length == 0) {
-        setInvalid(firstName,'First name can not be empty');
-        hasError = true;
-    } else if (firstNameValue.match(/[0-9]+/) !== null) {
+    if (firstNameValue.match(/[0-9]+/) !== null) {
         setInvalid(firstName,'First name can not contain numbers');
         hasError = true
     } else if (firstNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
@@ -166,10 +163,7 @@ function register(event) {
 
     var lastName = document.getElementById('register-last-name-control');
     var lastNameValue = lastName.value.trim();
-    if (lastNameValue.length == 0) {
-        setInvalid(lastName,'Last name can not be empty');
-        hasError = true;
-    } else if (lastNameValue.match(/[0-9]+/) !== null ) {
+    if (lastNameValue.match(/[0-9]+/) !== null ) {
         setInvalid(lastName,'Last name can not contain numbers');
         hasError = true
     } else if (lastNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
@@ -205,20 +199,6 @@ function register(event) {
         setValid(password);
     }
 
-    const checkbox = document.querySelectorAll('input[name="degree"]');
-    var fieldset = document.getElementById('register-programme-control');
-    var radioBtn = [...checkbox]
-    if (radioBtn.some(rbn => rbn.checked)) {
-        fieldset.classList.remove('is-invalid'); 
-        fieldset.classList.add('is-valid'); 
-        fieldset.querySelector('small').innerHTML ="";
-      } else {
-        var errMesg = radioBtn[0].parentNode.querySelector('small')
-        errMesg.innerText = 'You must select one programme'
-        fieldset.classList.add('is-invalid');
-        fieldset.classList.remove('is-valid');
-        hasError = true; 
-      }
 
     if (hasError) {
         document.getElementById('register-error').classList.remove('d-none');
