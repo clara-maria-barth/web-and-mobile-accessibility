@@ -40,8 +40,10 @@
                 <div class="col-4">
                     <div class="btn-toolbar justify-content-end">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-dark font-increase-button" id="font-increase-button">A+</button>
-                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button">A-</button>
+                            <button class="btn btn-dark font-increase-button" aria-label="Increase font size"
+                                id="font-increase-button">A+</button>
+                            <button class="btn btn-dark font-decrease-button" aria-label="Decrease font size"
+                                id="font-decrease-button">A-</button>
                         </div>
                     </div>
                 </div>
@@ -221,10 +223,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label id="regPasswordLabel" for="register-password-control">Password</label>
-                                    <input class="form-control" id="register-password-control" type="password"
-                                        placeholder="Password" required>
+                                    <input class="form-control" id="register-password-control"
+                                        aria-describedby="register-password-help" type="password" placeholder="Password"
+                                        required>
                                     <small class="invalid-feedback" role="alert"></small>
-                                    <small id="register-password-help" class="form-text text-muted" role="alert">Your password must
+                                    <small id="register-password-help" class="form-text text-muted">66Your
+                                        password must
                                         be
                                         8-16 characters long and contain both letters and numbers.</small>
                                 </div>
