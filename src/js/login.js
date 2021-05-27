@@ -151,7 +151,8 @@ function register(event) {
 
     var firstName = document.getElementById('register-first-name-control');
     var firstNameValue = firstName.value.trim();
-    if (firstNameValue.match(/[0-9]+/) !== null) {
+        if (firstNameValue.length == 0) {
+    } else if (firstNameValue.match(/[0-9]+/) !== null) {
         setInvalid(firstName,'First name can not contain numbers');
         hasError = true
     } else if (firstNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
@@ -163,7 +164,8 @@ function register(event) {
 
     var lastName = document.getElementById('register-last-name-control');
     var lastNameValue = lastName.value.trim();
-    if (lastNameValue.match(/[0-9]+/) !== null ) {
+    if (lastNameValue.length == 0) {
+    } else if (lastNameValue.match(/[0-9]+/) !== null ) {
         setInvalid(lastName,'Last name can not contain numbers');
         hasError = true
     } else if (lastNameValue.match(/[!"#$%&'()*+,-.:;<=>?@[\]^_`{|}~]/) !== null) {
