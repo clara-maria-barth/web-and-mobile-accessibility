@@ -199,41 +199,24 @@
                         <form id="register-form" novalidate>
                             <div class="form-group">
                                 <p class="form-label" id="register-basic-legend">Basic information
-                                    <small class="text-secondary">(required)</small>
+                                    <small class="text-secondary">(optional)</small>
                                 </p>
                                 <div class="form-row">
                                     <div class="form-group col-12 col-lg-6">
                                         <label id="firstNameLabel" for="register-first-name-control">First name</label>
                                         <input class="form-control" type="text" id="register-first-name-control"
-                                            placeholder="First name" required>
+                                            placeholder="First name">
                                         <small class="invalid-feedback" role="alert"></small>
                                     </div>
                                     <div class="form-group col-12 col-lg-6">
                                         <label id="lastNameLabel" for="register-last-name-control">Last name</label>
                                         <input class="form-control" type="text" id="register-last-name-control"
-                                            placeholder="Last name" required>
+                                            placeholder="Last name">
                                         <small class="invalid-feedback" role="alert"></small>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label id="regEmailLabel" for="register-email-control">Email </label>
-                                    <input class="form-control" id="register-email-control" type="email"
-                                        placeholder="Email" required>
-                                    <small class="invalid-feedback" role="alert"></small>
-                                </div>
-                                <div class="form-group">
-                                    <label id="regPasswordLabel" for="register-password-control">Password</label>
-                                    <input class="form-control" id="register-password-control"
-                                        aria-describedby="register-password-help" type="password" placeholder="Password"
-                                        required>
-                                    <small class="invalid-feedback" role="alert"></small>
-                                    <small id="register-password-help" class="form-text text-muted">66Your
-                                        password must
-                                        be
-                                        8-16 characters long and contain both letters and numbers.</small>
-                                </div>
-                                <div class="form-group">
-                                    <fieldset id="register-programme-control" required>
+                                    <fieldset id="register-programme-control">
                                         <legend>Programme</legend>
                                         <div>
                                             <input aria-label="bachelor" type="radio" name="degree" id="bachelor"
@@ -251,6 +234,26 @@
                                             <small class="invalid-feedback form-text" role="alert"></small>
                                         </div>
                                     </fieldset>
+                                </div>
+                                <p class="form-label" id="register-basic-legend">Required Information
+                                    <small class="text-secondary">(required)</small>
+                                </p>
+                                <div class="form-group">
+                                    <label id="regEmailLabel" for="register-email-control">Email </label>
+                                    <input class="form-control" id="register-email-control" type="email"
+                                        placeholder="Email" required>
+                                    <small class="invalid-feedback" role="alert"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label id="regPasswordLabel" for="register-password-control">Password</label>
+                                    <input class="form-control" id="register-password-control"
+                                        aria-describedby="register-password-help" type="password" placeholder="Password"
+                                        required>
+                                    <small class="invalid-feedback" role="alert"></small>
+                                    <small id="register-password-help" class="form-text text-muted">Your
+                                        password must
+                                        be
+                                        8-16 characters long and contain both letters and numbers.</small>
                                 </div>
                             </div>
                             <fieldset class="form-control">
